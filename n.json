@@ -1,0 +1,74 @@
+{
+    
+  "data":[
+               
+         {
+            "image":"n1.png",
+            "titre":"Nintendo1",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2015",
+            "prix":"150"
+        },
+         {
+            "image":"n2.png",
+            "titre":"Nintendo2",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2015",
+            "prix":"255"
+        },
+         {
+            "image":"n3.png",
+            "titre":"Nintendo3",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2014",
+            "prix":"300"
+        },
+         {
+            "image":"n4.png",
+            "titre":"Nintendo4",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2016",
+            "prix":"400"
+        },
+         {
+            "image":"n5.png",
+            "titre":"Nintendo5",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2016",
+            "prix":"450"
+        },
+         {
+            "image":"n6.png",
+            "titre":"Nintendo6",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2017",
+            "prix":"500"
+        },
+          { "image":"n7.png",
+            "titre":"Nintendo7",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2017",
+            "prix":"520"
+        }, 
+           { "image":"n8.png",
+            "titre":"Nintendo8",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2017",
+            "prix":"530"
+        },
+        { "image":"n9.png",
+            "titre":"Nintendo9",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2017",
+            "prix":"600"
+        }, 
+             { "image":"n10.png",
+            "titre":"Nintendo10",
+            "Auteur":"Dave jOHNSON",
+            "Annee":"2017",
+            "prix":"750"
+        }  
+               
+               ]  
+    
+}

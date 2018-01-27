@@ -1,0 +1,28 @@
+{
+ "data":[
+    {
+       "user" :"login1",
+       "password":"pswd1"
+    },
+    
+    {
+       "user" :"login2",
+       "password":"pswd2"
+    },
+    
+    {
+       "user" :"login3",
+       "password":"pswd3"
+    },
+    
+    {
+       "user" :"login4",
+       "password":"pswd4"
+    },
+    {
+       "user" :"login5",
+       "password":"pswd5"
+    }
+    
+   ]
+}

@@ -1,0 +1,173 @@
+<html>
+ <head>
+     <meta charset="utf-8">
+					<title>BROOKE CE</title>
+     <meta name="viewport" content="width=device-width" initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		     <link rel="stylesheet" href="style.css">
+							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA78lAV5HukDKwA7etFNHIn5igY5Vgsjxg"> </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+							<script src="classeCart.js"></script>
+	        	<script src="boot.js"></script>
+										<script src="contact.js"></script>
+		
+
+ </head>   
+  <body>
+    <div class="container">
+						  <div class='header'>
+					       <div class="row ">
+					        <div class=" col-md-2 dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> Livre
+                   
+                        </button>
+              <ul class="dropdown-menu">
+															<li class="dropdown-header">Catégorie</li> 
+														<li><a href="#idInfo" id="catInfo">Informatique</a></li>
+														<li ><a href="#idLettre" id="catLettre">Littérature</a></li>
+													
+	             <li ><a href="#idGeo" id="catGeo">Géographie</a></li>
+															
+               </ul> 
+        </div>
+								<div class=" col-md-2 dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Film
+                   
+                        </button>
+              <ul class="dropdown-menu">
+															<li class="dropdown-header">Catégorie</li>
+              <li><a href="#idComedy" id="catComedy">Comedie</a></li>
+															<li class="divider"></li>
+	            <li ><a href="#idAction" id="catAction">Action</a></li>
+														<li class="divider"></li>
+														 <li ><a href="#idDrame" id="catDrame">Drame</a></li>
+	             <li ><a href="#idFiction" id="catFiction">Fiction</a></li>
+               </ul> 
+        </div>
+								<div class=" col-md-2 dropdown">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> JEUX
+                   
+                        </button>
+              <ul class="dropdown-menu">
+															<li class="dropdown-header">Catégorie</li>
+              <li><a href="#idPlay" id="catPlay">PlayStation</a></li>
+															<li class="divider"></li>
+	            <li ><a href="#idBox" id="catBox">XBOX</a></li>
+														<li class="divider"></li>
+	             <li ><a href="#idNint" id="catNint">Nintendo</a></li>
+               </ul> 
+        </div>
+													<div class=" col-md-2 ">
+														<button  class= ' btn btn-info'  onclick='contactUs();'> Contact</button>
+													  </div>
+									<div class=" col-md-2 ">
+									<a href='index.html' class= ' btn btn-warning'> Déconnexion</a>
+									</div>
+										<div class=" col-md-2 ">
+												<span id='item'>		</span>
+								<img  class='btn btn-succes'id="achat" src="panier.png" onclick="voirPanier();">
+						
+									</div>
+         </div>       
+        </div>      
+    
+				<!-- -------------------------------------------------publicite--------------------------------- -->
+				<div class="row " id="pub"></div>
+				<!-- -----------------------------------------------categorie------------------------------------ -->
+					<div id="catg">
+					<!--------------!!!! calasse livre-------------------->
+					<div id="book">
+				<!--------------!!!! calasse informatique-------------------->
+				<div  id="idInfo"> </div>
+				<!-----------------------------cat littérature--------------->
+				
+								<div  id="idLettre"> </div>
+								
+<!--  ---------------------------cat littérature-------------  -->
+					<div  id="idGeo"> </div>
+					</div>     <!-- fin de la div book-------------------------------------- -->
+				<!--  -------------------------------------------CATEGORIE FILM----------------------------------------------
+		-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		---------------------------------------------------------------------------------------------------------- -->
+		<div id='movie'>
+			<!--   ----------------------------Categorie FICTION--------------------
+		----------------------------------------------------------------------------------- -->
+			<div  id="idFiction"> </div>
+			<!-- ----------------------------------
+			-------------CATEGORIE DRAME ------------------
+			------------------------------------------------------- -->
+			<div  id="idDrame"> </div>
+			<!-- ----------------------------------
+			-------------CATEGORIE COMEDIE ------------------
+			--------------------------------------------------------->
+			<div  id="idComedy"> </div>
+			<!-- -------------------------------- -->
+		
+				
+			<!-- ------------------------- --------CATEGORIE ACTION ----------------- -->
+			
+			<div  id="idAction"> </div>
+		
+		</div>  <!-- fin de la div film--------------------------------------------------- -->
+		
+		
+		<!-- -----------------------Categorie Game-------------------------------------------------------
+		----------------------------------------------------------------------------------------------- -->
+		<div id ="game">
+		
+			<!--   ----------------------------Categorie FICTION--------------------
+		----------------------------------------------------------------------------------- -->
+			<div  id="idPlay"> </div>
+			<!-- ----------------------------------
+			-------------CATEGORIE DRAME ------------------
+			--------------------------------------------------------->
+			<div  id="idBox"> </div>
+			<!-- ----------------------------------
+			-------------CATEGORIE COMEDIE ------------------
+			--------------------------------------------------------->
+			<div  id="idNint"> </div>
+		
+				
+		</div>  <!-- fin de la div game---------------------------------------- -->
+		
+					</div><!--  fin de la div categorie------------------ -->
+		
+		<!----------------------COMMANDE-------------------------------->
+					<div id="cm"> </div>
+		
+    <!-- ------------------------------Cart-------------------------------------- -->
+			   	<div   id="cart">
+								  <div class='col-md-2'>
+								       <h3 class=" btn txt.center btn-warning"> Total<span id='costOrder'></span></h3>
+									  </div>
+								     <div class='col-md-10'>
+			             <button class=" btn btn-success pull-right" onclick="voirFacture();">Passer votre Commande</button>
+												  </div>
+			      <br><br>
+									
+		    </div>
+						<!-- ------------------------------Cart-------------------------------------- -->	
+							<div   id="panierCommande">
+								  <div>
+								       <h4 class=" btn txt.center btn-warning"> Total<span id='costPanier'></span></h4>
+									  </div>
+								     <div >
+			             <button class=" btn btn-success  pull-right" onclick="voirFacture();">Soumetre commande</button><br><br>
+																<button class=" btn btn-danger  pull-right" onclick="stopOrder();">Annuler la commande</button>
+												  </div>
+							</div>
+			      <!-- ------------------------------FACTURE-------------------------------------- -->
+									 <div  id="facture">
+											
+								    <h4 class=" btn txt.center btn-warning"> Détails de Votre Factures</h4>
+												<h5 class=" btn txt.center btn-warning"> Total facture <span id="bill"></span></h5>
+												</div>
+									<!-- ------------------------------MAP-------------------------------------- -->	
+		       <div id='map'></div>
+				
+				</div>
+  </body>  
+    
+    
+</html>
